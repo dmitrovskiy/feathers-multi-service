@@ -1,7 +1,7 @@
 {
   "name": "feathers-multi-service",
   "description": "A Feathers service wrapper to use multiple services under one",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/dmitrovskiy/feathers-multi-service",
   "main": "lib/",
   "keywords": [
@@ -34,7 +34,8 @@
     "ava": "ava -v ./test/**/**/*.test.js",
     "build": "redrun clean babel",
     "clean": "del ./dist",
-    "babel": "babel --source-maps --copy-files -d dist/ lib/"
+    "babel": "babel --source-maps --copy-files -d lib/ src/",
+    "publish": "npm run babel"
   },
   "ava": {
     "babel": "inherit",
