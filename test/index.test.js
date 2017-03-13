@@ -1,6 +1,6 @@
 import test from 'ava';
 import { assert } from 'chai';
-import service from '../src/index';
+import service from '../lib/index';
 
 test('should throw error without options', () => {
   assert.throws(() => service(), 'options must be set');
